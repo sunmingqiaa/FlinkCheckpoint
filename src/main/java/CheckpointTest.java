@@ -64,6 +64,7 @@ public class CheckpointTest {
                 );
 //        sink到kafka
 //        sum.addSink(new FlinkKafkaProducer010<String>(bootstrap, sinkTopic, new SimpleStringSchema()));
+        System.out.println("smq分支第一次提交");
         sum.print();
         try {
             env.execute();
