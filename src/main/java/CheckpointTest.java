@@ -63,7 +63,7 @@ public class CheckpointTest {
                         }
                 );
 //        sink到kafka
-        sum.addSink(new FlinkKafkaProducer010<String>(bootstrap, sinkTopic, new SimpleStringSchema()));
+//        sum.addSink(new FlinkKafkaProducer010<String>(bootstrap, sinkTopic, new SimpleStringSchema()));
         sum.print();
         try {
             env.execute();
