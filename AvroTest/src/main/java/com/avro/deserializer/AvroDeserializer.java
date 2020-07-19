@@ -1,6 +1,7 @@
 package com.avro.deserializer;
 
 import com.avroTest.User;
+import org.apache.avro.Schema;
 import org.apache.avro.io.BinaryDecoder;
 import org.apache.avro.io.DatumReader;
 import org.apache.avro.io.DecoderFactory;
@@ -35,4 +36,5 @@ public class AvroDeserializer implements Deserializer<User> {
         }
         return user;
     }
+
 }
